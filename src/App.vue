@@ -1,32 +1,66 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="app" class="wrapper">
+      <main>
+        <router-view/>
+      </main>
+
+      <div class="container">
+        <input id="burger" type="checkbox"/>
+        <label for="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav>
+          <ul>
+            <li class="nav-item">
+              <div class="dropdown">
+                <div class="red">
+                  <button class="dropbtn">
+                    &lsaquo; {{  $t('navigation.language') }} &rsaquo;
+                  </button>
+                </div>
+                <LocaleSwitcher/>
+              </div>
+            </li>
+            <li class="nav-item">
+              <router-link to="/about-me">{{  $t('navigation.about') }}</router-link>
+              <div class="list-item">
+                <div class="small-item">
+                  <div class="smaller-item"></div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <router-link to="/projects">{{ $t('navigation.projects') }}</router-link>
+              <div class="list-item">
+                <div class="small-item">
+                  <div class="smaller-item"></div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item"><router-link to="/contact">{{ $t('navigation.contact') }}</router-link>
+              <div class="list-item">
+                <div class="small-item">
+                  <div class="smaller-item"></div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </nav><!-- end navigation -->
+      </div>
     </div>
-    <router-view/>
-  </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+@import "assets/style.css";
 </style>
+
+<script>
+import LocaleSwitcher from '@/components/LocaleSwitcher'
+export default {
+  components: { LocaleSwitcher }
+}
+</script>

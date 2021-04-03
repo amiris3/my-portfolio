@@ -1,0 +1,48 @@
+{
+  "navigation": {
+    "language": "Language",
+    "about": "About me",
+    "projects": "My projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "my-portfolio": "My portfolio"
+  },
+  "about": {
+    "presentation": "Hi! I am a 21 yo developer from France.",
+    "hobbies": "My hobbies include but aren't limited to playing the piano, writing fantasy novels and learning foreign languages.",
+    "i-speak": "I speak",
+    "i-code-in": "I code in",
+    "foreign-lang": ["French", "English", "Mandarin", "Korean", "Norwegian"]
+  },
+  "projects": [
+    {
+      "name": "Chess Game",
+      "date": "02/2020-05/2020",
+      "features": ["version console et GUI avec Qt", "modules en C++", "IA à 2 niveaux (algo min-max avec élagage)", "traduction en 4 langues", "règles du jeu implémentées"],
+      "image_url": "EchecsEtMaths2020.png",
+      "link": ""
+    },
+    {
+      "name": "OrganiZer",
+      "date": "summer of 2020",
+      "features": ["daily exams and lessons (selectable day)","subject details (completion rate and average)","CRUD for exams, subjects and kholloscope"],
+      "image_url": "OrganiZer2020.jpg",
+      "link": "https://github.com/amiris3/my_organizer"
+    },
+    {
+      "name": "La pousse de bambou",
+      "date": "10/2020-01/2021 : PHP MVC version, 02/2021-05/2021 : Symfony and VueJS version",
+      "features": [],
+      "image_url": "LaPousseDeBambou2020.png",
+      "link": "https://github.com/amiris3/La-pousse-de-bambou"
+    },
+    {
+      "name": "Drupal 9 theme",
+      "date": "03/2021-05/2021",
+      "features": [],
+      "image_url": "ClubITLR2021.png",
+      "link": ""
+    }
+  ]
+}
